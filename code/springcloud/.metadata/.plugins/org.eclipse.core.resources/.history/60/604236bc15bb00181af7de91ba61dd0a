@@ -1,0 +1,4 @@
+#\u8bbe\u7f6e\u5355\u4e2a\u6587\u4ef6\u5927\u5c0f
+spring.http.multipart.maxFileSize=200MB
+#\u4e00\u6b21\u8bf7\u6c42\u4e0a\u4f20\u6587\u4ef6\u5927\u5c0f
+spring.http.multipart.maxRequestSize=200MB

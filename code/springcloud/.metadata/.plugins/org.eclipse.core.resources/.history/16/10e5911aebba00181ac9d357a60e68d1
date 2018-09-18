@@ -1,0 +1,16 @@
+package com.billyang;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * SpringBoot∆Ù∂Ø¿‡
+ * 
+ * @author yangcan14944
+ * 
+ */
+@SpringBootApplication
+public class App {
+	public static void main(String[] args) {
+
+	}
+}

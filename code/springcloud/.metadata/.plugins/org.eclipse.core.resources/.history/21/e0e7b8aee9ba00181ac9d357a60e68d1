@@ -1,0 +1,10 @@
+package com.billyang.controller;
+
+/**
+ * springboot HelloWorld
+ * @author yangcan14944
+ *
+ */
+public class HelloWorld {
+
+}

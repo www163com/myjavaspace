@@ -1,0 +1,20 @@
+package com.billyang.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * 
+ * @author yangcan14944 SpringBoot整合Servlet方式一
+ */
+@SpringBootApplication
+public class App {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		SpringApplication.run(App.class, args);
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.billyang.app;
+
+/**
+ * 
+ * @author yangcan14944
+ * SpringBoot整合Servlet方式一
+ */
+public class App {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
