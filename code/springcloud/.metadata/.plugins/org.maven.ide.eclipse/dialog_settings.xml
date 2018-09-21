@@ -9,10 +9,7 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
-	<section name="MavenProjectWizardLocationPage">
-		<list key="location">
-			<item value="E:\mywork\myjavaspace\code\springcloud\01-spring-boot-hello"/>
-		</list>
+	<section name="MavenDependenciesWizardPage">
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -21,7 +18,11 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
-	<section name="MavenDependenciesWizardPage">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\mywork\myjavaspace\code\springcloud\09-spring-boot-view-freemarker"/>
+			<item value="E:\mywork\myjavaspace\code\springcloud\01-spring-boot-hello"/>
+		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -56,8 +57,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="02-spring-boot-servlet"/>
+			<item value="10-spring-boot-view-thymeleaf"/>
 			<item value="spring-boot-starter-parent"/>
+			<item value="08-spring-boot-view-jsp"/>
+			<item value="02-spring-boot-servlet"/>
 			<item value="01-spring-boot-hello"/>
 		</list>
 		<list key="projectNameTemplate">

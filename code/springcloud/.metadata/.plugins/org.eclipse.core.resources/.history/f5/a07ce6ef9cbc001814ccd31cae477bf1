@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>thymeleaf遍历map对象</title>
+</head>
+<body>
+	<table border="1">
+	 	<tr>
+	 		<th>ID</th>
+	 		<th>Name</th>
+	 		<th>Age</th>
+	 	</tr>
+	 	<tr th:each="maps:${map}">
+	 		<td th:text="${maps}"></td>
+	 	</tr>
+	</table>
+	<hr/>
+	<table border="1">
+	 	<tr>
+	 		<th>ID</th>
+	 		<th>Name</th>
+	 		<th>Age</th>
+	 	</tr>
+	 	<tr th:each="maps:${map}">
+	 		<td th:each="entry:${maps}"th:text="${entry.value.userId"></td>
+	 		<td th:each="entry:${maps}"th:text="${entry.value.userName"></td>
+	 		<td th:each="entry:${maps}"th:text="${entry.value.userAge"></td>
+	 	</tr>
+	</table>
+</body>
+</html>

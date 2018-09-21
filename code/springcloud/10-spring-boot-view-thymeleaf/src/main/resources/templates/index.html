@@ -5,8 +5,32 @@
 <title>thymeleaf第一条案例</title>
 </head>
 <body>
-	<span th:text="hello"></span>
+	th:text="hello"：<span th:text="hello"></span>
 	<hr/>
-	<span th:text="${msg}"></span>
+	th:text="${msg}"：<span th:text="${msg}"></span>
+	<hr/>
+	th:value="${msg}"：<input type="text" name="username" th:value="${msg}"/>
+	<hr/>
+	判断字符串是否为空th:text="${#strings.isEmpty(msg)}"：<span th:text="${#strings.isEmpty(msg)}"></span>
+	<hr/>
+	判断字符串长度1th:text="${#strings.length(msg)}":<span th:text="${#strings.length(msg)}"></span>
+	<hr/>
+	判断字符串是否包含子串th:text="${#strings.contains(msg,'T')}"：<span th:text="${#strings.contains(msg,'T')}"></span>
+	<hr/>
+	截取字符串1th:text="${#strings.substring(msg,13)}":<span th:text="${#strings.substring(msg,13)}"></span>
+	<hr/>
+           截取字符串2th:text="${#strings.substring(msg,11,13)}":<span th:text="${#strings.substring(msg,11,13)}"></span>
+	<hr/> 
+	字符串大小写转化th:text="${#strings.toUpperCase(msg)}":<span th:text="${#strings.toUpperCase(msg)}"></span>
+	<hr/>
+           日期格式化处理th:text="${#dates.format(key)}":<span th:text="${#dates.format(key)}"></span>
+    <hr/>
+	日期格式化处理th:text="${#dates.format(key,'yyy/MM/dd')}":<span th:text="${#dates.format(key,'yyy/MM/dd')}"></span>
+	<hr/>
+	获取年份th:text="${#dates.year(key)}"：<span th:text="${#dates.year(key)}"></span>
+	<hr/>
+	获取月份th:text="${#dates.month(key)}"：<span th:text="${#dates.month(key)}"></span>
+	<hr/>
+	获取天数th:text="${#dates.day(key)}"：<span th:text="${#dates.day(key)}"></span>
 </body>
 </html>

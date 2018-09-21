@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>thymeleaf遍历</title>
+</head>
+<body>
+	<table border="1">
+	 	<tr>
+	 		<th>ID</th>
+	 		<th>Name</th>
+	 		<th>Age</th>
+	 	</tr>
+	 	<tr th:each="u:${list}">
+	 		<td th:text="${u.userId}"></td>
+	 		<td th:text="${u.userName}"></td>
+	 		<td th:text="${u.userAge}"></td>
+	 	</tr>
+	</table>
+	<hr/>
+		<table border="1">
+	 	<tr>
+	 		<th>ID</th>
+	 		<th>Name</th>
+	 		<th>Age</th>
+	 	</tr>
+	 	<tr th:each="u,var:${list}">
+	 		<td th:text="${u.userId}"></td>
+	 		<td th:text="${u.userName}"></td>
+	 		<td th:text="${u.userAge}"></td>
+	 	</tr>
+	</table>
+</body>
+</html>
