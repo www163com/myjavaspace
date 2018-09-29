@@ -1,0 +1,9 @@
+server:
+       port: 8081
+girl:
+  cupSize: E
+  age: 18
+tenant:
+    defaultTenantName: dbgirl
+    currentTenantIdentifier: CURRENT_TENANT_IDENTIFIER
+    tenantKey: TENANT_KEY

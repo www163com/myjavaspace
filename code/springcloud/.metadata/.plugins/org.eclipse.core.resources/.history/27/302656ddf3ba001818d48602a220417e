@@ -1,7 +1,0 @@
-package com.billyang.servlet;
-
-import javax.servlet.http.HttpServlet;
-
-public class FirstServlet extends HttpServlet {
-
-}

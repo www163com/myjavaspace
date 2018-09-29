@@ -1,0 +1,25 @@
+package com.billyang.controller;
+
+/**   
+*    
+* 项目名称：12-spring-boot-springmvc-mybatis   
+* 类名称：App12   
+* 类描述：   启动类
+* 创建人：yangcan14944   
+* 创建时间：2018-9-26 下午2:19:37   
+* 修改人：yangcan14944   
+* 修改时间：2018-9-26 下午2:19:37   
+* 修改备注：   
+* @version    
+*    
+*/
+public class App12 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.billyang.service.impl;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.billyang.pojo.Users;
+import com.billyang.service.UsersService;
+
+/**   
+*    
+* 项目名称：12-spring-boot-springmvc-mybatis   
+* 类名称：UsersServiceImpl   
+* 类描述：   
+* 创建人：yangcan14944   
+* 创建时间：2018-9-26 下午2:08:40   
+* 修改人：yangcan14944   
+* 修改时间：2018-9-26 下午2:08:40   
+* 修改备注：   
+* @version    
+*    
+*/
+@Service
+@Transactional
+public class UsersServiceImpl implements UsersService{
+
+	@Override
+	public void addUser(Users user) {
+		
+		
+	}
+
+}

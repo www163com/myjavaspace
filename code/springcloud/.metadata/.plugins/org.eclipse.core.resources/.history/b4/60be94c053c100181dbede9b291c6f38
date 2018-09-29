@@ -1,0 +1,30 @@
+package com.billyang.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**   
+*    
+* 项目名称：12-spring-boot-springmvc-mybatis   
+* 类名称：UsersController   
+* 类描述：   
+* 创建人：yangcan14944   
+* 创建时间：2018-9-26 下午2:11:30   
+* 修改人：yangcan14944   
+* 修改时间：2018-9-26 下午2:11:30   
+* 修改备注：   
+* @version    
+*    
+*/
+@Controller
+@RequestMapping("/users")
+public class UsersController {
+	/*
+	 * 页面跳转
+	 * */
+	@RequestMapping("/{page}")
+	public String showPage(@PathVariable String page){
+		return page;
+	}
+}

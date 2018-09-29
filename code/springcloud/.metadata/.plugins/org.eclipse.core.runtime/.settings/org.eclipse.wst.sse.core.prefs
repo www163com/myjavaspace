@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=RemoteSystemsTempFiles,01-spring-boot-hello,02-spring-boot-servlet,03-spring-boot-filter,04-spring-boot-listener,05-spring-boot-resources1,06-spring-boot-resources2,07-spring-boot-fileupload,08-spring-boot-view-jsp,09-spring-boot-view-freemarker,10-spring-boot-view-thymeleaf
+task-tag-projects-already-scanned=RemoteSystemsTempFiles,01-spring-boot-hello,02-spring-boot-servlet,03-spring-boot-filter,04-spring-boot-listener,05-spring-boot-resources1,06-spring-boot-resources2,07-spring-boot-fileupload,08-spring-boot-view-jsp,09-spring-boot-view-freemarker,10-spring-boot-view-thymeleaf,11-spring-boot-view-thymeleaf-URL,12-spring-boot-springmvc-mybatis
