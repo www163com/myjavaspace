@@ -1,5 +1,12 @@
 package com.billyang.pojo;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+
+
+
+
+
 /**   
 *    
 * 项目名称：13-spring-boot-springmvc-validate   
@@ -14,7 +21,10 @@ package com.billyang.pojo;
 *    
 */
 public class Users {
+	@Email//邮箱
+	@NotBlank(message="用户姓名不能为空")//非空校验
 	private String name;
+	@NotBlank//非空校验
 	private String password;
 	private Integer age;
 	public String getName() {

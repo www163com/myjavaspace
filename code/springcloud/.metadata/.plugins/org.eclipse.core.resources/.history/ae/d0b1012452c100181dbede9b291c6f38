@@ -1,5 +1,0 @@
-package com.billyang.mapper;
-
-public interface UserMapper {
-
-}

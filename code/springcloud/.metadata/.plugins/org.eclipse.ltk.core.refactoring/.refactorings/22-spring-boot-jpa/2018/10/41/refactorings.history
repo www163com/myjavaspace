@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.billyang.dao.UsersRepostory&apos; to &apos;UsersRepository&apos;&#x0D;&#x0A;- Original project: &apos;22-spring-boot-jpa&apos;&#x0D;&#x0A;- Original element: &apos;com.billyang.dao.UsersRepostory&apos;&#x0D;&#x0A;- Renamed element: &apos;com.billyang.dao.UsersRepository&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UsersRepostory&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.billyang.dao{UsersRepostory.java[UsersRepostory" matchStrategy="1" name="UsersRepository" qualified="false" references="true" similarDeclarations="false" stamp="1538988444197" textual="false" version="1.0"/>
+</session>

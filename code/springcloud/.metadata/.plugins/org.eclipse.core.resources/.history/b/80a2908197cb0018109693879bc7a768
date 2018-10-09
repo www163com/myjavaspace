@@ -1,0 +1,26 @@
+package com.billyang.pojo;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**   
+*    
+* 项目名称：22-spring-boot-jpa   
+* 类名称：Menus   
+* 类描述：   
+* 创建人：yangcan14944   
+* 创建时间：2018-10-9 下午3:44:22   
+* 修改人：yangcan14944   
+* 修改时间：2018-10-9 下午3:44:22   
+* 修改备注：   
+* @version    
+*    
+*/
+@Entity
+@Table(name="t_menus")
+public class Menus {
+	private Integer menusId;
+	private String menusName;
+	private String menusUrl;
+	private Integer fatherId;
+}

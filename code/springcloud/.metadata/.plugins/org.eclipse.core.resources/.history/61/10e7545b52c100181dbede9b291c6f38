@@ -1,7 +1,0 @@
-package com.billyang.mapper;
-
-import com.billyang.pojo.Users;
-
-public interface UserMapper {
-	void insertUser(Users user);
-}

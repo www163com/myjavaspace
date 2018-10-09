@@ -1,7 +1,0 @@
-package com.billyang.service;
-
-import com.billyang.pojo.Users;
-
-public interface UsersService {
-	void addUser(Users user);
-}

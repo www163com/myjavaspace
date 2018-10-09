@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="ManyToManyTest" project="22-spring-boot-jpa" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.billyang.test.ManyToManyTest" time="0.385">
+    <testcase name="testSave" classname="com.billyang.test.ManyToManyTest" time="0.385"/>
+  </testsuite>
+</testrun>

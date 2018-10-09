@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.billyang.App17&apos; to &apos;App18&apos;&#x0D;&#x0A;- Original project: &apos;18-spring-boot-exception5&apos;&#x0D;&#x0A;- Original element: &apos;com.billyang.App17&apos;&#x0D;&#x0A;- Renamed element: &apos;com.billyang.App18&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;App17&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.billyang{App17.java[App17" matchStrategy="1" name="App18" qualified="false" references="true" similarDeclarations="false" stamp="1538276948649" textual="false" version="1.0"/>
+</session>
