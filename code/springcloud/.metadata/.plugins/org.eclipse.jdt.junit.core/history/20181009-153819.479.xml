@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="OneToManyTest.testSave" project="22-spring-boot-jpa" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testSave" classname="com.billyang.test.OneToManyTest" time="0.332"/>
-</testrun>

@@ -1,16 +1,12 @@
 package com.billyang.exception;
 
-import java.util.Properties;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
 /**   
 *    

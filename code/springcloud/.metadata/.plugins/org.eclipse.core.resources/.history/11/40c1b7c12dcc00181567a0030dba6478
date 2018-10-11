@@ -1,0 +1,50 @@
+package com.billyang.service.impl;
+
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import com.billyang.pojo.Users;
+import com.billyang.service.UsersService;
+
+/**   
+*    
+* 项目名称：23-spring-boot-ehcache   
+* 类名称：UsersServiceImpl   
+* 类描述：   
+* 创建人：yangcan14944   
+* 创建时间：2018-10-10 上午9:40:31   
+* 修改人：yangcan14944   
+* 修改时间：2018-10-10 上午9:40:31   
+* 修改备注：   
+* @version    
+*    
+*/
+public class UsersServiceImpl implements UsersService{
+
+	@Override
+	public List<Users> findUserAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Users findUserById() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<Users> findUserByPage(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void saveUsers(Users users) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

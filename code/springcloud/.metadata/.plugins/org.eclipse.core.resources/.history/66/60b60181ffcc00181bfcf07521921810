@@ -1,0 +1,7 @@
+package com.billyang.config;
+
+import org.springframework.scheduling.quartz.AdaptableJobFactory;
+
+public class MyAdaptableJobFactory extends AdaptableJobFactory {
+
+}

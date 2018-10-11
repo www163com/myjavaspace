@@ -1,0 +1,7 @@
+spring.redis.pool.maxIdel=10
+spring.redis.pool.minIdel=5
+spring.redis.pool.maxTotal=20
+
+
+spring.redis.hostName=127.0.0.2
+spring.redis.port=63791

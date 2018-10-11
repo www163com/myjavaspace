@@ -1,0 +1,13 @@
+package com.billyang.quartz;
+
+public class QuartzDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

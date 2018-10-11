@@ -1,5 +1,7 @@
 package com.billyang.pojo;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,6 +28,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name="t_users")
 public class Users {
+	/**
+	 * 
+	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")

@@ -1,0 +1,38 @@
+package com.billyang.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import redis.clients.jedis.JedisPoolConfig;
+
+/**   
+*    
+* 项目名称：24-spring-boot-redis   
+* 类名称：RedisConfig   
+* 类描述：   完成对redis整合时候的配置
+* 创建人：yangcan14944   
+* 创建时间：2018-10-10 下午2:11:26   
+* 修改人：yangcan14944   
+* 修改时间：2018-10-10 下午2:11:26   
+* 修改备注：   
+* @version    
+*    
+*/
+@Configuration
+public class RedisConfig {
+	/*
+	 *1.创建一个JedisPoolConfig对象，在该对象中完成一些连接池的配置 
+	 * */
+	@Bean
+	public JedisPoolConfig getJedisPoolConfig(){
+		JedisPoolConfig config = new JedisPoolConfig();
+		//最大空闲数
+		config.setMaxIdle(10);
+		//最小空闲数
+		config.setMinIdle(5);
+		//最大连接数
+		config.setMaxTotal(20);
+		return config;
+	}
+	
+}

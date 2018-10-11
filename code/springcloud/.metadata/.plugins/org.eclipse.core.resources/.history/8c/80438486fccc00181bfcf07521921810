@@ -1,0 +1,29 @@
+package com.billyang.config;
+
+import org.springframework.context.annotation.Configuration;
+
+/**   
+*    
+* 项目名称：27-spring-boot-quartz   
+* 类名称：QuartzConfig   
+* 类描述：  Quartz配置类 
+* 创建人：yangcan14944   
+* 创建时间：2018-10-11 上午10:21:10   
+* 修改人：yangcan14944   
+* 修改时间：2018-10-11 上午10:21:10   
+* 修改备注：   
+* @version    
+*    
+*/
+@Configuration
+public class QuartzConfig {
+	/*
+	 * 1.创建job对象
+	 */
+	/*
+	 * 2.创建trigger对象
+	 */
+	/*
+	 * 3.创建scheduler对象
+	 * */
+}

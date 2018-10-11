@@ -1,0 +1,34 @@
+package com.billyang.test;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.billyang.App24;
+
+/**   
+*    
+* 项目名称：24-spring-boot-redis   
+* 类名称：RedisTest   
+* 类描述：   SpringData Redis测试
+* 创建人：yangcan14944   
+* 创建时间：2018-10-10 下午2:33:29   
+* 修改人：yangcan14944   
+* 修改时间：2018-10-10 下午2:33:29   
+* 修改备注：   
+* @version    
+*    
+*/
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes=App24.class)
+public class RedisTest {
+	@Autowired
+	private RedisTemplate<String, Object> redisTemplate;
+	@Test
+	public void testSet(){
+		this.redisTemplate.opsForValue().set("key", "北京尚学堂");
+	}
+}
