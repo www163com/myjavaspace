@@ -1,7 +1,0 @@
-package com.billyang.dao;
-
-import org.springframework.data.repository.Repository;
-
-public interface UsersRepositoryCrudRepository extends Repository<T, ID> {
-
-}

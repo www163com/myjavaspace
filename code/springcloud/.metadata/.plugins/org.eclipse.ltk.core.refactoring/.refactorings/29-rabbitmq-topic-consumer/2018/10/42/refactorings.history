@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;InfoReceiver.java&apos; to &apos;29-rabbitmq-topic-consumer/src/main/java/com.billyang&apos;&#x0D;&#x0A;- Original project: &apos;29-rabbitmq-topic-consumer&apos;&#x0D;&#x0A;- Destination element: &apos;29-rabbitmq-topic-consumer/src/main/java/com.billyang&apos;&#x0D;&#x0A;- Original element: &apos;com.billyang.InfoReceiver.java&apos;" description="Copy compilation unit" destination="/src\/main\/java&lt;com.billyang" element1="/src\/main\/java&lt;com.billyang{InfoReceiver.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1539655507470" units="1" version="1.0"/>
+</session>

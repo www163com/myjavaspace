@@ -1,9 +1,0 @@
-package com.billyang.dao;
-
-import org.springframework.data.repository.Repository;
-
-import com.billyang.pojo.Users;
-
-public interface UsersRepositoryByName extends Repository<Users, Integer>{
-
-}

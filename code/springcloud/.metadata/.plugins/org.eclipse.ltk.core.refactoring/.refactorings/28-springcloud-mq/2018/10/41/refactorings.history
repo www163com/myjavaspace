@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.billyang.Test.java&apos; to &apos;TestSender.java&apos;&#x0D;&#x0A;- Original project: &apos;28-springcloud-mq&apos;&#x0D;&#x0A;- Original element: &apos;com.billyang.Test.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.billyang.TestSender.java&apos;" description="Rename compilation unit &apos;Test.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java&lt;com.billyang{Test.java" name="TestSender.java" references="false" stamp="1539315702207" version="1.0"/>
+</session>

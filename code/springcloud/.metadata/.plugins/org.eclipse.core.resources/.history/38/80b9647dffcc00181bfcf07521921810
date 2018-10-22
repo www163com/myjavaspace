@@ -1,7 +1,0 @@
-package com.billyang.cinfig;
-
-import org.springframework.scheduling.quartz.AdaptableJobFactory;
-
-public class MyAdaptableJobFactory extends AdaptableJobFactory {
-
-}

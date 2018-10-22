@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;logback.xml&apos; to &apos;10-spring-boot-view-thymeleaf/src/test/resources&apos;&#x0D;&#x0A;- Original project: &apos;springboot-helloworld&apos;&#x0D;&#x0A;- Destination element: &apos;10-spring-boot-view-thymeleaf/src/test/resources&apos;&#x0D;&#x0A;- Original element: &apos;logback.xml&apos;" description="Copy file" destination="=10-spring-boot-view-thymeleaf/src\/test\/resources" element1="src/main/resources/logback.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1539309327650" units="0" version="1.0"/>
+</session>

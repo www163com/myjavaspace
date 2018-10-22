@@ -1,8 +1,0 @@
-package com.billyang.dao;
-
-import org.springframework.data.repository.Repository;
-
-public interface UsersRepositoryByName extends Repository<T, ID>,
-		com.sun.corba.se.spi.activation.Repository {
-
-}

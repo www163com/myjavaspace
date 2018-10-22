@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;29-rabbitmq-fonout-provider&apos; to &apos;29-rabbitmq-fanout-provider&apos;" description="Rename resource &apos;29-rabbitmq-fonout-provider&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/29-rabbitmq-fonout-provider" name="29-rabbitmq-fanout-provider" stamp="1539658989731" updateReferences="true"/>
+</session>
