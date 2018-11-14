@@ -5,6 +5,7 @@ org.eclipse.jdt.core.classpathVariable.JRE_SRC=F\:/jdk1.8/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=F\:/eclipse/plugins/org.junit_3.8.2.v3_8_2_v20100427-1100/
 org.eclipse.jdt.core.classpathVariable.M2_REPO=D\:/Program Files (x86)/maven/repo
+org.eclipse.jdt.core.classpathVariable.TOMCAT_HOME=D\:/Program Files (x86)/tomcat/apache-tomcat-7.0.14
 org.eclipse.jdt.core.codeComplete.argumentPrefixes=
 org.eclipse.jdt.core.codeComplete.argumentSuffixes=
 org.eclipse.jdt.core.codeComplete.fieldPrefixes=

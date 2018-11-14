@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;banner.txt&apos; to &apos;01-spring-boot-hello/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;mybatis-shiro2&apos;&#x0D;&#x0A;- Destination element: &apos;01-spring-boot-hello/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;banner.txt&apos;" description="Copy file" destination="=01-spring-boot-hello/src\/main\/resources" element1="src/main/resources/banner.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1541753949685" units="0" version="1.0"/>
+</session>
