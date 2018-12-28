@@ -26,6 +26,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\mywork\myjavaspace\code\springcloud\myshiro"/>
 			<item value="E:\mywork\myjavaspace\code\springcloud\12-spring-boot-springmvc-mybatis"/>
 			<item value="E:\mywork\myjavaspace\code\springcloud\09-spring-boot-view-freemarker"/>
 			<item value="E:\mywork\myjavaspace\code\springcloud\01-spring-boot-hello"/>
@@ -40,10 +41,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="com.billyang"/>
 		</list>
 		<list key="package">
+			<item value="org.shiro.realm.test"/>
 		</list>
 		<list key="artifactId">
+			<item value="shiro-realm-test"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -54,6 +58,20 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="shiro-realm-test"/>
+			<item value="shi"/>
+			<item value="shiro-test"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
 	<section name="MavenProjectImportWizardPage">
@@ -72,18 +90,12 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.billyang"/>
-			<item value="org.springframework.boot"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="28-springcloud-mq"/>
-			<item value="spring-boot-starter-parent"/>
-			<item value="13-spring-boot-springmvc-validate"/>
-			<item value="10-spring-boot-view-thymeleaf"/>
-			<item value="08-spring-boot-view-jsp"/>
-			<item value="02-spring-boot-servlet"/>
-			<item value="01-spring-boot-hello"/>
+			<item value="shiro-realm-test"/>
+			<item value="myshiro"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -94,8 +106,6 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
-			<item value="2.0.4.RELEASE"/>
-			<item value="2.0.5.RELEASE"/>
 		</list>
 	</section>
 </section>

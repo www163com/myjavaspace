@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.billyang.project.system.config.mapper.ConfigMapper">
+    
+    <resultMap type="Config" id="ConfigResult">
+    	<id     property="configId"     column="config_id"      />
+        <result property="configName"    column="config_name"    />
+        <result property="configKey"     column="config_key"     />
+        <result property="configValue"   column="config_value"   />
+        <result property="configType"    column="config_type"    />
+        <result property="createBy"      column="create_by"      />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"      column="update_by"      />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+     
+    <select id="selectConfigByKey" parameterType="String" resultMap="ConfigResult">
+        select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+        where config_key = #{configKey}
+    </select>
+</mapper>

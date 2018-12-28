@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.billyang.test.AuthenticationTest" time="0.617" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2017.2.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\jdk1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.40-b25"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\mywork\myjavaspace\code\shiro\myshiro\shiro-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\mywork\myjavaspace\code\shiro\myshiro\shiro-test"/>
+    <property name="java.runtime.version" value="1.8.0_40-b25"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\jdk1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1.WIN\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="E:\开发工具\idea\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="F:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\IBM\WebSphere MQ\java\lib;C:\Program Files (x86)\IBM\WebSphere MQ\java\lib64;D:\database\oracle\product\11.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\jdk1.8\bin;F:\jdk1.8\jre\bin;F:\eclipse\dropins\apache-ant-1.8.1\bin;D:\Program Files (x86)\Android\android-sdk\tools;D:\Program Files (x86)\maven\apache-maven-3.0.3\bin;D:\Program Files (x86)\Android\adt-bundle-windows-x86_64-20130917\sdk\platform-tools;D:\Program Files (x86)\Android\adt-bundle-windows-x86_64-20130917\sdk\tools;C:\Program Files (x86)\IBM\WebSphere MQ\bin64;C:\Program Files (x86)\IBM\WebSphere MQ\bin;C:\Program Files (x86)\IBM\WebSphere MQ\tools\c\samples\bin;D:\Program Files (x86)\cygwin;F:\恒生\开发工具\web服务监控\soapui-4.5.2\bin;D:\PROGRA;2\IBM\SQLLIB\BIN;D:\PROGRA~2\IBM\SQLLIB\FUNCTION;D:\PROGRA~2\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\TortoiseSVN\bin;D:\Program Files (x86)\cxf\apache-cxf-2.6.16\bin;D:\mongo\mongodb-win32-x86_64-3.0.6\bin;D:\mongo\客户端;D:;redis;D:\Program Files\RabbitMQ Server\rabbitmq_server-3.6.2\sbin;D:\zookeeper\zookeeper-3.4.8;D:\thrift;D:\Program Files\nodejs\;D:\Program Files\MySQL\mysql-5.7.22-winx64\bin;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Git\cmd;C:\Users\Administrator.WINDOWS-2BBUIOA\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator.WINDOWS-2BBUIOA\AppData\Roaming\npm;D:\Program Files\MySQL\MySQL Server 5.5\bin;C:\ProgramData\yangcan14944\GitHubDesktop\bin;F:\eclipse\dropins\apache-ant-1.8.1\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="D:\Program Files (x86)\maven\repo"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Administrator.WINDOWS-2BBUIOA"/>
+    <property name="user.timezone" value="GMT+08:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="yangcan14944"/>
+    <property name="java.class.path" value="E:\开发工具\idea\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;E:\开发工具\idea\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="F:\jdk1.8\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.2.5 -s D:\Program Files (x86)\maven\apache-maven-3.0.3\conf\settings-springcloud.xml -Dmaven.repo.local=D:\Program Files (x86)\maven\repo package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_40"/>
+    <property name="java.ext.dirs" value="F:\jdk1.8\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\jdk1.8\jre\lib\resources.jar;F:\jdk1.8\jre\lib\rt.jar;F:\jdk1.8\jre\lib\sunrsasign.jar;F:\jdk1.8\jre\lib\jsse.jar;F:\jdk1.8\jre\lib\jce.jar;F:\jdk1.8\jre\lib\charsets.jar;F:\jdk1.8\jre\lib\jfr.jar;F:\jdk1.8\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\开发工具\idea\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.billyang.test.AuthenticationTest" name="testAuthentication" time="0.617"/>
+</testsuite>

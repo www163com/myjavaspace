@@ -1,0 +1,4 @@
+com\billyang\test\JdbcRealmTest.class
+com\billyang\test\CustomRealmTest.class
+com\billyang\test\AuthenticationTest.class
+com\billyang\test\IniRealmTest.class

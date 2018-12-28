@@ -1,0 +1,1091 @@
+15:26:34.838 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication on hs1 with PID 24920 (E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes started by yangcan14944 in E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2)
+15:26:34.838 [main] DEBUG com.ruoyi.RuoYiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+15:26:34.838 [main] INFO  com.ruoyi.RuoYiApplication - The following profiles are active: druid
+15:26:35.838 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+15:26:39.349 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+15:26:39.352 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache]
+15:27:01.310 [main] ERROR com.alibaba.druid.pool.DruidDataSource - init datasource error, url: jdbc:mysql://123.207.20.136:3306/ry?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2186)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:923)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:804)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:558)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:20)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 139 common frames omitted
+15:27:01.336 [main] ERROR com.alibaba.druid.pool.DruidDataSource - {dataSource-1} init error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2186)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:923)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:804)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:558)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:20)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 139 common frames omitted
+15:27:01.352 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:27:01.352 [main] WARN  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'menuService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuService': Unsatisfied dependency expressed through field 'menuMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+15:27:01.399 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'menuService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuService': Unsatisfied dependency expressed through field 'menuMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:20)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'menuService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuService': Unsatisfied dependency expressed through field 'menuMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:923)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:804)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:558)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [com/ruoyi/framework/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'menuService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuService': Unsatisfied dependency expressed through field 'menuMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'menuService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuService': Unsatisfied dependency expressed through field 'menuMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuService': Unsatisfied dependency expressed through field 'menuMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuMapper' defined in file [E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes\com\ruoyi\project\system\menu\mapper\MenuMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 85 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ruoyi/framework/config/DruidConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 98 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2186)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 109 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 139 common frames omitted
+15:37:30.869 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication on hs1 with PID 12024 (E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2\target\classes started by yangcan14944 in E:\mywork\myjavaspace\code\springcloud\mybatis-shiro2)
+15:37:30.885 [main] DEBUG com.ruoyi.RuoYiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+15:37:30.885 [main] INFO  com.ruoyi.RuoYiApplication - The following profiles are active: druid
+15:37:31.525 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+15:37:34.901 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+15:37:34.915 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache]
+15:37:35.784 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:37:37.034 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [loginRecordCache]
+15:37:40.164 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:37:40.179 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+15:37:40.476 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:37:41.556 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:37:41.675 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:37:41.675 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+15:37:41.706 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RuoyiScheduler' with instanceId 'hs11541749061566'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:37:41.706 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+15:37:41.706 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+15:37:41.722 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5a1f778
+15:37:41.831 [main] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==>  Preparing: SELECT job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time FROM sys_job 
+15:37:42.019 [main] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==> Parameters: 
+15:37:42.066 [main] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - <==      Total: 2
+15:37:44.947 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+15:37:46.265 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+15:37:46.324 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+15:37:46.433 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:37:46.465 [main] INFO  com.ruoyi.RuoYiApplication - Started RuoYiApplication in 16.386 seconds (JVM running for 17.352)
+15:37:47.461 [Quartz Scheduler [RuoyiScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_hs11541749061566 started.
+15:38:55.315 [http-nio-80-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:38:55.588 [http-nio-80-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:38:55.589 [http-nio-80-exec-1] DEBUG com.ruoyi.framework.shiro.web.session.SpringSessionValidationScheduler - Scheduling session validation job using Spring Scheduler with session validation interval of [600000]ms...
+15:38:55.596 [http-nio-80-exec-1] DEBUG com.ruoyi.framework.shiro.web.session.SpringSessionValidationScheduler - Session validation job successfully scheduled with Spring Scheduler.
+15:38:56.924 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+15:38:56.952 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+15:38:56.958 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 15:08:56(String)
+15:38:56.999 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+15:38:57.003 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+15:39:42.681 [http-nio-80-exec-8] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [shiro-activeSessionCache]
+15:39:51.944 [http-nio-80-exec-8] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Error][验证码错误]
+15:39:51.946 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+15:39:51.950 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 1(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 验证码错误(String)
+15:39:52.400 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+15:39:58.800 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==>  Preparing: select u.user_id, u.dept_id, u.login_name, u.user_name, u.email, u.phonenumber, u.sex, u.avatar, u.password, u.salt, u.status, u.refuse_des, u.login_ip, u.login_date, u.create_time, d.dept_id, d.parent_id, d.dept_name, d.order_num, d.status as dept_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id where u.login_name = ? 
+15:39:58.808 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==> Parameters: admin(String)
+15:39:58.867 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - <==      Total: 1
+15:39:58.877 [http-nio-80-exec-9] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Success][登录成功]
+15:39:58.878 [http-nio-80-exec-9] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+15:39:58.878 [http-nio-80-exec-9] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 0(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 登录成功(String)
+15:39:58.916 [http-nio-80-exec-9] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+15:39:59.099 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - ==>  Preparing: update sys_user SET dept_id = ?, login_name = ?, user_name = ?, email = ?, phonenumber = ?, sex = ?, password = ?, salt = ?, status = ?, refuse_des = ?, login_ip = ?, login_date = ?, update_time = sysdate() where 1=1 and user_id = ? 
+15:39:59.103 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - ==> Parameters: 106(Long), admin(String), 若依(String), ry@163.com(String), 15888888888(String), 1(String), 29c67a30398638269fe600f73a054934(String), 111111(String), 0(Integer), 正常(String), 0:0:0:0:0:0:0:1(String), 2018-11-09 15:39:58.917(Timestamp), 1(Long)
+15:39:59.138 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - <==    Updates: 1
+15:39:59.347 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+15:39:59.352 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+15:39:59.397 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+15:39:59.439 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+15:39:59.444 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+15:39:59.452 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+15:39:59.706 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+15:39:59.740 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: b7f2f6d8-bcef-45f7-9703-a658fe49dc78(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 15:39:42.655(Timestamp), 2018-11-09 15:39:59.705(Timestamp), 1800000(Long)
+15:39:59.784 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 1
+15:40:17.466 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==>  Preparing: SELECT r.role_id, r.role_name, r.role_key FROM sys_user u LEFT JOIN sys_user_role ur ON u.user_id = ur.user_id LEFT JOIN sys_role r ON ur.role_id = r.role_id WHERE ur.user_id = ? 
+15:40:17.469 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==> Parameters: 1(Long)
+15:40:17.485 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - <==      Total: 1
+15:40:17.488 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+15:40:17.493 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - ==> Parameters: 1(Long)
+15:40:17.510 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - <==      Total: 73
+15:40:18.279 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_config 
+15:40:18.281 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigList_COUNT - ==> Parameters: 
+15:40:18.304 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigList_COUNT - <==      Total: 1
+15:40:18.306 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigList - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config LIMIT ? 
+15:40:18.308 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigList - ==> Parameters: 10(Integer)
+15:40:18.311 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigList - <==      Total: 2
+15:40:25.429 [http-nio-80-exec-3] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigById - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_id = ? 
+15:40:25.431 [http-nio-80-exec-3] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigById - ==> Parameters: 1(Integer)
+15:40:25.435 [http-nio-80-exec-3] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigById - <==      Total: 1
+15:40:25.639 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+15:40:25.645 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 系统管理(String), 参数配置-修改参数(String), com.ruoyi.project.system.config.controller.ConfigController.edit()(String), web(String), admin(String), 研发一部(String), /system/config/edit/1(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+15:40:25.687 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+15:40:36.541 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_oper_log 
+15:40:36.546 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogList_COUNT - ==> Parameters: 
+15:40:36.552 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogList_COUNT - <==      Total: 1
+15:40:36.556 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogList - ==>  Preparing: SELECT * FROM sys_oper_log order by oper_time desc LIMIT ? 
+15:40:36.561 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogList - ==> Parameters: 10(Integer)
+15:40:36.575 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogList - <==      Total: 1
+15:40:40.235 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogById - ==>  Preparing: select * from sys_oper_log where oper_id = ? 
+15:40:40.241 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogById - ==> Parameters: 100(Long)
+15:40:40.247 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.selectOperLogById - <==      Total: 1
+15:40:58.317 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - ==>  Preparing: SELECT count(0) FROM information_schema.tables WHERE table_comment <> '' AND table_schema = (SELECT database()) 
+15:40:58.323 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - ==> Parameters: 
+15:40:58.412 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - <==      Total: 1
+15:40:58.415 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - ==>  Preparing: SELECT table_name, table_comment, create_time, update_time FROM information_schema.tables WHERE table_comment <> '' AND table_schema = (SELECT database()) order by create_time desc LIMIT ? 
+15:40:58.418 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - ==> Parameters: 10(Integer)
+15:40:58.468 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - <==      Total: 10
+15:41:22.807 [http-nio-80-exec-8] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableByName - ==>  Preparing: select table_name, table_comment, create_time, update_time from information_schema.tables where table_comment <> '' and table_schema = (select database()) and table_name = ? 
+15:41:22.809 [http-nio-80-exec-8] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableByName - ==> Parameters: sys_config(String)
+15:41:22.814 [http-nio-80-exec-8] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableByName - <==      Total: 1
+15:41:22.819 [http-nio-80-exec-8] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableColumnsByName - ==>  Preparing: select column_name, data_type, column_comment from information_schema.columns where table_name = ? and table_schema = (select database()) order by ordinal_position 
+15:41:22.821 [http-nio-80-exec-8] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableColumnsByName - ==> Parameters: sys_config(String)
+15:41:22.838 [http-nio-80-exec-8] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableColumnsByName - <==      Total: 10
+15:41:23.352 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+15:41:23.353 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 系统工具(String), 代码生成-生成代码(String), com.ruoyi.project.tool.gen.controller.GenController.genCode()(String), web(String), admin(String), 研发一部(String), /tool/gen/genCode/sys_config(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+15:41:23.414 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+15:41:43.321 [http-nio-80-exec-4] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableByName - ==>  Preparing: select table_name, table_comment, create_time, update_time from information_schema.tables where table_comment <> '' and table_schema = (select database()) and table_name = ? 
+15:41:43.322 [http-nio-80-exec-4] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableByName - ==> Parameters: sys_job(String)
+15:41:43.325 [http-nio-80-exec-4] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableByName - <==      Total: 1
+15:41:43.329 [http-nio-80-exec-4] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableColumnsByName - ==>  Preparing: select column_name, data_type, column_comment from information_schema.columns where table_name = ? and table_schema = (select database()) order by ordinal_position 
+15:41:43.331 [http-nio-80-exec-4] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableColumnsByName - ==> Parameters: sys_job(String)
+15:41:43.338 [http-nio-80-exec-4] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableColumnsByName - <==      Total: 12
+15:41:43.389 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+15:41:43.412 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 系统工具(String), 代码生成-生成代码(String), com.ruoyi.project.tool.gen.controller.GenController.genCode()(String), web(String), admin(String), 研发一部(String), /tool/gen/genCode/sys_job(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+15:41:43.466 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+15:43:49.719 [http-nio-80-exec-7] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+15:43:49.722 [http-nio-80-exec-7] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: b7f2f6d8-bcef-45f7-9703-a658fe49dc78(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 15:39:42.655(Timestamp), 2018-11-09 15:43:49.718(Timestamp), 1800000(Long)
+15:43:49.797 [http-nio-80-exec-7] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 2
+15:43:50.706 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_user 
+15:43:50.707 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - ==> Parameters: 
+15:43:50.710 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - <==      Total: 1
+15:43:50.717 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList - ==>  Preparing: SELECT user_id, dept_id, login_name, user_name, email, phonenumber, password, sex, avatar, salt, user_type, status, refuse_des, create_by, create_time FROM sys_user order by create_time desc LIMIT ? 
+15:43:50.724 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList - ==> Parameters: 10(Integer)
+15:43:50.732 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList - <==      Total: 2
+15:43:50.816 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.dept.mapper.DeptMapper.selectDeptAll - ==>  Preparing: select dept_id, parent_id, dept_name, order_num, leader, phone, email, status, create_by, create_time from sys_dept 
+15:43:50.818 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.dept.mapper.DeptMapper.selectDeptAll - ==> Parameters: 
+15:43:50.826 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.dept.mapper.DeptMapper.selectDeptAll - <==      Total: 10
+15:43:57.362 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_user WHERE dept_id IN (SELECT dept_id FROM sys_dept WHERE dept_id = ? OR parent_id = ?) 
+15:43:57.366 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - ==> Parameters: 103(Long), 103(Long)
+15:43:57.369 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - <==      Total: 1
+15:43:58.878 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_user WHERE dept_id IN (SELECT dept_id FROM sys_dept WHERE dept_id = ? OR parent_id = ?) 
+15:43:58.879 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - ==> Parameters: 104(Long), 104(Long)
+15:43:58.882 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserList_COUNT - <==      Total: 1
+15:44:03.460 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_role 
+15:44:03.461 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleList_COUNT - ==> Parameters: 
+15:44:03.464 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleList_COUNT - <==      Total: 1
+15:44:03.467 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleList - ==>  Preparing: SELECT role_id, role_name, role_key, role_sort, status, create_time, remark FROM sys_role order by role_sort asc LIMIT ? 
+15:44:03.469 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleList - ==> Parameters: 10(Integer)
+15:44:03.472 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleList - <==      Total: 2
+15:44:06.073 [http-nio-80-exec-2] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleById - ==>  Preparing: select role_id, role_name, role_key, role_sort, status, create_time, remark from sys_role u where u.role_id = ? 
+15:44:06.076 [http-nio-80-exec-2] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleById - ==> Parameters: 2(Long)
+15:44:06.085 [http-nio-80-exec-2] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRoleById - <==      Total: 1
+15:44:06.087 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+15:44:06.089 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 系统管理(String), 角色管理-修改角色(String), com.ruoyi.project.system.role.controller.RoleController.edit()(String), web(String), admin(String), 研发一部(String), /system/role/edit/2(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+15:44:06.138 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+15:44:06.460 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenuAll - ==>  Preparing: select menu_id, menu_name, parent_id, order_num, url, menu_type, visible, perms, icon, create_by, create_time from sys_menu 
+15:44:06.461 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenuAll - ==> Parameters: 
+15:44:06.501 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenuAll - <==      Total: 75
+15:44:06.505 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenuTree - ==>  Preparing: select concat(m.menu_id, m.perms) as perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id where rm.role_id = ? order by m.parent_id, m.order_num 
+15:44:06.508 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenuTree - ==> Parameters: 2(Long)
+15:44:06.511 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenuTree - <==      Total: 0
+15:44:46.045 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==>  Preparing: SELECT r.role_id, r.role_name, r.role_key FROM sys_user u LEFT JOIN sys_user_role ur ON u.user_id = ur.user_id LEFT JOIN sys_role r ON ur.role_id = r.role_id WHERE ur.user_id = ? 
+15:44:46.047 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==> Parameters: 1(Long)
+15:44:46.050 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - <==      Total: 1
+15:44:46.052 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostsByUserId - ==>  Preparing: SELECT p.post_id, p.post_name, p.post_code FROM sys_user u LEFT JOIN sys_user_post up ON u.user_id = up.user_id LEFT JOIN sys_post p ON up.post_id = p.post_id WHERE up.user_id = ? 
+15:44:46.055 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostsByUserId - ==> Parameters: 1(Long)
+15:44:46.135 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostsByUserId - <==      Total: 1
+15:44:51.669 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+15:44:51.674 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: b7f2f6d8-bcef-45f7-9703-a658fe49dc78(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 15:39:42.655(Timestamp), 2018-11-09 15:44:51.668(Timestamp), 1800000(Long)
+15:44:51.725 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 2
+15:44:51.727 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserById - ==>  Preparing: select u.user_id, u.dept_id, u.login_name, u.user_name, u.email, u.phonenumber, u.sex, u.avatar, u.password, u.salt, u.status, u.refuse_des, u.login_ip, u.login_date, u.create_time, d.dept_id, d.parent_id, d.dept_name, d.order_num, d.status as dept_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id where u.user_id = ? 
+15:44:51.729 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserById - ==> Parameters: 1(Long)
+15:44:51.731 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserById - <==      Total: 1
+15:44:51.734 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+15:44:51.736 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 系统管理(String), 个人信息-修改头像(String), com.ruoyi.project.system.user.controller.ProfileController.avatar()(String), web(String), admin(String), 研发一部(String), /system/user/profile/avatar/1(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+15:44:51.780 [http-nio-80-exec-8] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+15:45:17.191 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_post 
+15:45:17.193 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostList_COUNT - ==> Parameters: 
+15:45:17.196 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostList_COUNT - <==      Total: 1
+15:45:17.199 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostList - ==>  Preparing: SELECT post_id, post_code, post_name, post_sort, status, create_by, create_time, remark FROM sys_post order by post_sort asc LIMIT ? 
+15:45:17.201 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostList - ==> Parameters: 10(Integer)
+15:45:17.205 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.post.mapper.PostMapper.selectPostList - <==      Total: 4
+15:45:38.771 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_job 
+15:45:38.773 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobList_COUNT - ==> Parameters: 
+15:45:38.778 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobList_COUNT - <==      Total: 1
+15:45:38.781 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobList - ==>  Preparing: SELECT job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time, remark FROM sys_job order by create_time asc LIMIT ? 
+15:45:38.783 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobList - ==> Parameters: 10(Integer)
+15:45:38.802 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobList - <==      Total: 2
+15:45:47.880 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobById - ==>  Preparing: select job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time from sys_job u where u.job_id = ? 
+15:45:47.881 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobById - ==> Parameters: 1(Long)
+15:45:47.884 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobById - <==      Total: 1
+15:45:47.886 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+15:45:47.887 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 监控管理(String), 定时任务-修改调度(String), com.ruoyi.project.monitor.job.controller.JobController.edit()(String), web(String), admin(String), 研发一部(String), /monitor/job/edit/1(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+15:45:47.930 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+15:46:46.367 [http-nio-80-exec-6] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Logout][退出成功]
+15:46:46.368 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+15:46:46.373 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 0(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 退出成功(String)
+15:46:46.409 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+15:46:46.412 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==>  Preparing: select * from sys_user_online where sessionid = ? 
+15:46:46.413 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==> Parameters: b7f2f6d8-bcef-45f7-9703-a658fe49dc78(String)
+15:46:46.415 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - <==      Total: 1
+15:46:46.416 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - ==>  Preparing: delete from sys_user_online where sessionId = ? 
+15:46:46.418 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - ==> Parameters: b7f2f6d8-bcef-45f7-9703-a658fe49dc78(String)
+15:46:46.531 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - <==    Updates: 1
+15:47:00.585 [http-nio-80-exec-1] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Error][验证码错误]
+15:47:00.586 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+15:47:00.587 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 1(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 验证码错误(String)
+15:47:00.687 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+15:48:56.591 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+15:48:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+15:48:56.593 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 15:18:56(String)
+15:48:56.595 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+15:48:56.596 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+15:52:07.282 [http-nio-80-exec-6] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Error][验证码错误]
+15:52:07.284 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+15:52:07.285 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 1(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 验证码错误(String)
+15:52:07.362 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+15:58:56.592 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+15:58:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+15:58:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 15:28:56(String)
+15:58:56.594 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+15:58:56.594 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+16:00:06.970 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==>  Preparing: select u.user_id, u.dept_id, u.login_name, u.user_name, u.email, u.phonenumber, u.sex, u.avatar, u.password, u.salt, u.status, u.refuse_des, u.login_ip, u.login_date, u.create_time, d.dept_id, d.parent_id, d.dept_name, d.order_num, d.status as dept_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id where u.login_name = ? 
+16:00:06.972 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==> Parameters: admin(String)
+16:00:06.977 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - <==      Total: 1
+16:00:06.978 [http-nio-80-exec-5] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Success][登录成功]
+16:00:06.979 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+16:00:06.980 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 0(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 登录成功(String)
+16:00:07.024 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+16:00:07.026 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - ==>  Preparing: update sys_user SET dept_id = ?, login_name = ?, user_name = ?, email = ?, phonenumber = ?, sex = ?, password = ?, salt = ?, status = ?, refuse_des = ?, login_ip = ?, login_date = ?, update_time = sysdate() where 1=1 and user_id = ? 
+16:00:07.029 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - ==> Parameters: 106(Long), admin(String), 若依(String), ry@163.com(String), 15888888888(String), 1(String), 29c67a30398638269fe600f73a054934(String), 111111(String), 0(Integer), 正常(String), 0:0:0:0:0:0:0:1(String), 2018-11-09 16:00:07.025(Timestamp), 1(Long)
+16:00:07.113 [http-nio-80-exec-5] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - <==    Updates: 1
+16:00:07.127 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+16:00:07.129 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+16:00:07.138 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+16:00:07.148 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+16:00:07.152 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+16:00:07.155 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+16:00:07.237 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16:00:07.242 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 15:46:46.64(Timestamp), 2018-11-09 16:00:07.232(Timestamp), 1800000(Long)
+16:00:07.358 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 1
+16:00:10.953 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+16:00:10.954 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+16:00:10.958 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+16:00:10.963 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+16:00:10.964 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+16:00:10.976 [http-nio-80-exec-1] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+16:00:54.155 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+16:00:54.156 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+16:00:54.163 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+16:00:54.172 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+16:00:54.173 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+16:00:54.176 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+16:00:54.228 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16:00:54.230 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 15:46:46.64(Timestamp), 2018-11-09 16:00:54.228(Timestamp), 1800000(Long)
+16:00:54.343 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 2
+16:08:56.592 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+16:08:56.593 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+16:08:56.593 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 15:38:56(String)
+16:08:56.595 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+16:08:56.595 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+16:10:00.672 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+16:10:00.673 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+16:10:00.698 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+16:10:00.705 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+16:10:00.705 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+16:10:00.707 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+16:10:00.786 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16:10:00.789 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 15:46:46.64(Timestamp), 2018-11-09 16:10:00.784(Timestamp), 1800000(Long)
+16:10:00.870 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 2
+16:10:06.048 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==>  Preparing: SELECT r.role_id, r.role_name, r.role_key FROM sys_user u LEFT JOIN sys_user_role ur ON u.user_id = ur.user_id LEFT JOIN sys_role r ON ur.role_id = r.role_id WHERE ur.user_id = ? 
+16:10:06.049 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==> Parameters: 1(Long)
+16:10:06.052 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - <==      Total: 1
+16:10:06.056 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+16:10:06.057 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - ==> Parameters: 1(Long)
+16:10:06.110 [http-nio-80-exec-8] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - <==      Total: 73
+16:10:06.494 [http-nio-80-exec-3] DEBUG c.r.project.monitor.online.mapper.UserOnlineMapper.selectUserOnlineList_COUNT - ==>  Preparing: SELECT count(0) FROM sys_user_online 
+16:10:06.498 [http-nio-80-exec-3] DEBUG c.r.project.monitor.online.mapper.UserOnlineMapper.selectUserOnlineList_COUNT - ==> Parameters: 
+16:10:06.500 [http-nio-80-exec-3] DEBUG c.r.project.monitor.online.mapper.UserOnlineMapper.selectUserOnlineList_COUNT - <==      Total: 1
+16:10:06.503 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectUserOnlineList - ==>  Preparing: SELECT * FROM sys_user_online order by last_access_time desc LIMIT ? 
+16:10:06.506 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectUserOnlineList - ==> Parameters: 10(Integer)
+16:10:06.509 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectUserOnlineList - <==      Total: 1
+16:10:13.557 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==>  Preparing: select * from sys_user_online where sessionid = ? 
+16:10:13.558 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String)
+16:10:13.562 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - <==      Total: 1
+16:10:13.564 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16:10:13.565 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), off_line(String), 2018-11-09 15:46:47.0(Timestamp), 2018-11-09 16:10:01.0(Timestamp), 1800000(Long)
+16:10:13.607 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 2
+16:10:13.608 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==>  Preparing: insert into sys_oper_log(title, action, method, channel, login_name, dept_name, oper_url, oper_ip, oper_param, status, error_msg, oper_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate()) 
+16:10:13.609 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - ==> Parameters: 监控管理(String), 在线用户-强退用户(String), com.ruoyi.project.monitor.online.controller.UserOnlineController.forceLogout()(String), web(String), admin(String), 研发一部(String), /monitor/online/forceLogout/e69cf8e1-efe0-4011-864b-ce708be50eea(String), 0:0:0:0:0:0:0:1(String), {}(String), 0(Integer), null
+16:10:13.651 [http-nio-80-exec-1] DEBUG com.ruoyi.project.monitor.operlog.mapper.OperLogMapper.insertOperlog - <==    Updates: 1
+16:10:13.670 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==>  Preparing: select * from sys_user_online where sessionid = ? 
+16:10:13.671 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String)
+16:10:13.673 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - <==      Total: 1
+16:10:13.674 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - ==>  Preparing: delete from sys_user_online where sessionId = ? 
+16:10:13.675 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - ==> Parameters: e69cf8e1-efe0-4011-864b-ce708be50eea(String)
+16:10:13.718 [http-nio-80-exec-2] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - <==    Updates: 1
+16:10:13.731 [http-nio-80-exec-2] ERROR com.ruoyi.framework.web.exception.DefaultExceptionHandler - This subject is anonymous - it does not have any identifying principals and authorization operations require an identity to check against.  A Subject instance will acquire these identifying principals automatically after a successful login is performed be executing org.apache.shiro.subject.Subject.login(AuthenticationToken) or when 'Remember Me' functionality is enabled by the SecurityManager.  This exception can also occur when a previously logged-in Subject has logged out which makes it anonymous again.  Because an identity is currently not known due to any of these conditions, authorization is denied.
+org.apache.shiro.authz.UnauthenticatedException: This subject is anonymous - it does not have any identifying principals and authorization operations require an identity to check against.  A Subject instance will acquire these identifying principals automatically after a successful login is performed be executing org.apache.shiro.subject.Subject.login(AuthenticationToken) or when 'Remember Me' functionality is enabled by the SecurityManager.  This exception can also occur when a previously logged-in Subject has logged out which makes it anonymous again.  Because an identity is currently not known due to any of these conditions, authorization is denied.
+	at org.apache.shiro.subject.support.DelegatingSubject.assertAuthzCheckPossible(DelegatingSubject.java:199)
+	at org.apache.shiro.subject.support.DelegatingSubject.checkPermission(DelegatingSubject.java:204)
+	at org.apache.shiro.authz.aop.PermissionAnnotationHandler.assertAuthorized(PermissionAnnotationHandler.java:74)
+	at org.apache.shiro.authz.aop.AuthorizingAnnotationMethodInterceptor.assertAuthorized(AuthorizingAnnotationMethodInterceptor.java:84)
+	at org.apache.shiro.authz.aop.AnnotationsAuthorizingMethodInterceptor.assertAuthorized(AnnotationsAuthorizingMethodInterceptor.java:100)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:38)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.ruoyi.project.monitor.online.controller.UserOnlineController$$EnhancerBySpringCGLIB$$88471f38.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.shiro.authz.AuthorizationException: Not authorized to invoke method: public com.ruoyi.framework.web.page.TableDataInfo com.ruoyi.project.monitor.online.controller.UserOnlineController.list(com.ruoyi.project.monitor.online.domain.UserOnline)
+	at org.apache.shiro.authz.aop.AuthorizingAnnotationMethodInterceptor.assertAuthorized(AuthorizingAnnotationMethodInterceptor.java:90)
+	... 92 common frames omitted
+16:10:35.472 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==>  Preparing: select u.user_id, u.dept_id, u.login_name, u.user_name, u.email, u.phonenumber, u.sex, u.avatar, u.password, u.salt, u.status, u.refuse_des, u.login_ip, u.login_date, u.create_time, d.dept_id, d.parent_id, d.dept_name, d.order_num, d.status as dept_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id where u.login_name = ? 
+16:10:35.473 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==> Parameters: admin(String)
+16:10:35.479 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - <==      Total: 1
+16:10:35.482 [http-nio-80-exec-6] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Error][密码输入错误1次，admin]
+16:10:35.485 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+16:10:35.486 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 1(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 密码输入错误1次，admin(String)
+16:10:35.530 [http-nio-80-exec-6] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+16:11:16.457 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==>  Preparing: select u.user_id, u.dept_id, u.login_name, u.user_name, u.email, u.phonenumber, u.sex, u.avatar, u.password, u.salt, u.status, u.refuse_des, u.login_ip, u.login_date, u.create_time, d.dept_id, d.parent_id, d.dept_name, d.order_num, d.status as dept_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id where u.login_name = ? 
+16:11:16.458 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - ==> Parameters: admin(String)
+16:11:16.464 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.selectUserByLoginName - <==      Total: 1
+16:11:16.465 [http-nio-80-exec-4] INFO  sys-user - [0:0:0:0:0:0:0:1][admin][Success][登录成功]
+16:11:16.502 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
+16:11:16.503 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - ==> Parameters: admin(String), 0(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), 登录成功(String)
+16:11:16.578 [http-nio-80-exec-4] DEBUG com.ruoyi.project.monitor.logininfor.mapper.LogininforMapper.insertLogininfor - <==    Updates: 1
+16:11:16.580 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - ==>  Preparing: update sys_user SET dept_id = ?, login_name = ?, user_name = ?, email = ?, phonenumber = ?, sex = ?, password = ?, salt = ?, status = ?, refuse_des = ?, login_ip = ?, login_date = ?, update_time = sysdate() where 1=1 and user_id = ? 
+16:11:16.581 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - ==> Parameters: 106(Long), admin(String), 若依(String), ry@163.com(String), 15888888888(String), 1(String), 29c67a30398638269fe600f73a054934(String), 111111(String), 0(Integer), 正常(String), 0:0:0:0:0:0:0:1(String), 2018-11-09 16:11:16.579(Timestamp), 1(Long)
+16:11:16.656 [http-nio-80-exec-4] DEBUG com.ruoyi.project.system.user.mapper.UserMapper.updateUser - <==    Updates: 1
+16:11:16.668 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+16:11:16.712 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+16:11:16.717 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+16:11:16.722 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+16:11:16.724 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+16:11:16.726 [http-nio-80-exec-6] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+16:11:16.804 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16:11:16.805 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: 0664b8af-703a-4ac9-9373-9eecb5fca296(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 16:10:13.719(Timestamp), 2018-11-09 16:11:16.803(Timestamp), 1800000(Long)
+16:11:16.877 [http-nio-80-exec-3] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 1
+16:11:21.447 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==>  Preparing: SELECT r.role_id, r.role_name, r.role_key FROM sys_user u LEFT JOIN sys_user_role ur ON u.user_id = ur.user_id LEFT JOIN sys_role r ON ur.role_id = r.role_id WHERE ur.user_id = ? 
+16:11:21.448 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - ==> Parameters: 1(Long)
+16:11:21.451 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.role.mapper.RoleMapper.selectRolesByUserId - <==      Total: 1
+16:11:21.453 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+16:11:21.454 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - ==> Parameters: 1(Long)
+16:11:21.458 [http-nio-80-exec-7] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectPermsByUserId - <==      Total: 73
+16:13:13.687 [http-nio-80-exec-5] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - ==>  Preparing: SELECT count(0) FROM information_schema.tables WHERE table_comment <> '' AND table_schema = (SELECT database()) 
+16:13:13.690 [http-nio-80-exec-5] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - ==> Parameters: 
+16:13:13.693 [http-nio-80-exec-5] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - <==      Total: 1
+16:13:13.698 [http-nio-80-exec-5] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - ==>  Preparing: SELECT table_name, table_comment, create_time, update_time FROM information_schema.tables WHERE table_comment <> '' AND table_schema = (SELECT database()) order by create_time desc LIMIT ? 
+16:13:13.700 [http-nio-80-exec-5] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - ==> Parameters: 10(Integer)
+16:13:13.714 [http-nio-80-exec-5] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - <==      Total: 10
+16:13:18.120 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - ==>  Preparing: SELECT count(0) FROM information_schema.tables WHERE table_comment <> '' AND table_schema = (SELECT database()) 
+16:13:18.121 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - ==> Parameters: 
+16:13:18.126 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList_COUNT - <==      Total: 1
+16:13:18.132 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - ==>  Preparing: SELECT table_name, table_comment, create_time, update_time FROM information_schema.tables WHERE table_comment <> '' AND table_schema = (SELECT database()) order by create_time desc LIMIT ? 
+16:13:18.137 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - ==> Parameters: 25(Integer)
+16:13:18.142 [http-nio-80-exec-1] DEBUG com.ruoyi.project.tool.gen.mapper.GenMapper.selectTableList - <==      Total: 16
+16:13:52.861 [http-nio-80-exec-2] ERROR com.ruoyi.framework.web.exception.DefaultExceptionHandler - Request method 'POST' not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:207)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:374)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:314)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:352)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+16:13:58.862 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? and m.menu_type in ('M', 'C') and m.visible = 0 order by m.order_num 
+16:13:58.863 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - ==> Parameters: 1(Long)
+16:13:58.866 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.menu.mapper.MenuMapper.selectMenusByUserId - <==      Total: 17
+16:13:58.869 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config where config_key = ? 
+16:13:58.871 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - ==> Parameters: sys.index.skinName(String)
+16:13:58.877 [http-nio-80-exec-9] DEBUG com.ruoyi.project.system.config.mapper.ConfigMapper.selectConfigByKey - <==      Total: 1
+16:15:00.085 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==>  Preparing: replace into sys_user_online(sessionId, login_name, dept_name, ipaddr, browser, os, status, start_timestsamp, last_access_time, expire_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+16:15:00.088 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - ==> Parameters: 0664b8af-703a-4ac9-9373-9eecb5fca296(String), admin(String), 研发一部(String), 0:0:0:0:0:0:0:1(String), Chrome 42(String), Windows 10(String), on_line(String), 2018-11-09 16:10:13.719(Timestamp), 2018-11-09 16:15:00.085(Timestamp), 1800000(Long)
+16:15:00.145 [http-nio-80-exec-5] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.saveOnline - <==    Updates: 2
+16:18:56.591 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+16:18:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+16:18:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 15:48:56(String)
+16:18:56.617 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+16:18:56.618 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+16:28:56.591 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+16:28:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+16:28:56.593 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 15:58:56(String)
+16:28:56.595 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+16:28:56.596 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+16:38:56.592 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+16:38:56.593 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+16:38:56.594 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 16:08:56(String)
+16:38:56.595 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 0
+16:38:56.596 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+16:48:56.591 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - invalidation sessions...
+16:48:56.592 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+16:48:56.593 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - ==> Parameters: 2018-11-09 16:18:56(String)
+16:48:56.596 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineByExpired - <==      Total: 1
+16:48:56.597 [pool-1-thread-1] DEBUG com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Invalidated session with id [0664b8af-703a-4ac9-9373-9eecb5fca296] (stopped)
+16:48:56.598 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==>  Preparing: select * from sys_user_online where sessionid = ? 
+16:48:56.599 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - ==> Parameters: 0664b8af-703a-4ac9-9373-9eecb5fca296(String)
+16:48:56.601 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.selectOnlineById - <==      Total: 1
+16:48:56.602 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - ==>  Preparing: delete from sys_user_online where sessionId = ? 
+16:48:56.603 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - ==> Parameters: 0664b8af-703a-4ac9-9373-9eecb5fca296(String)
+16:48:56.647 [pool-1-thread-1] DEBUG com.ruoyi.project.monitor.online.mapper.UserOnlineMapper.deleteOnlineById - <==    Updates: 1
+16:48:56.648 [pool-1-thread-1] INFO  com.ruoyi.framework.shiro.web.session.OnlineWebSessionManager - Finished invalidation session. [1] sessions were stopped.

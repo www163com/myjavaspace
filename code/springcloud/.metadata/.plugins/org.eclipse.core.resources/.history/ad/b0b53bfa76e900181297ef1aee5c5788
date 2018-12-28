@@ -1,0 +1,5 @@
+package com.billyang.project.system.config.domain;
+
+public class Config {
+
+}

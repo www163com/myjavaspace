@@ -1,0 +1,26 @@
+package com.billyang;
+
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+/**   
+*    
+* 项目名称：mybatis-shiro3   
+* 类名称：YCServletInitializrer   
+* 类描述：   springboot在web容器中部署
+* 创建人：yangcan14944   
+* 创建时间：2018-11-15 下午4:21:33   
+* 修改人：yangcan14944   
+* 修改时间：2018-11-15 下午4:21:33   
+* 修改备注：   
+* @version    
+*    
+*/
+public class YCServletInitializrer extends SpringBootServletInitializer{
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application)
+    {
+        return application.sources(YCApplication.class);
+    }
+
+}
