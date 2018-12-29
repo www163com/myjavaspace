@@ -12,9 +12,17 @@ package com.billyang.vo;
 public class User {
     private String username;
     private String password;
-
+    private boolean rememberMe;
     public String getUsername() {
         return username;
+    }
+
+    public boolean getRememberMe() {
+        return rememberMe;
+    }
+
+    public void setRememberMe(boolean rememberMe) {
+        this.rememberMe = rememberMe;
     }
 
     public void setUsername(String username) {
